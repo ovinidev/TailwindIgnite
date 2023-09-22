@@ -3,15 +3,20 @@ import {
   MdGraphicEq as Dashboard,
   MdOutlineTaskAlt as Task,
   MdOutlineOutlinedFlag as Reporting,
+  MdCloudUpload as Cloud,
 } from "react-icons/md";
 import { SiDatabricks as Projects } from "react-icons/si";
 import {
   FiUsers as Users,
+  FiUser as User,
   FiChevronDown as Menu,
   FiSettings as Settings,
   FiLogOut as Logout,
 } from "react-icons/fi";
-import { HiOutlineSupport as Support } from "react-icons/hi";
+import {
+  HiOutlineSupport as Support,
+  HiOutlineMail as Email,
+} from "react-icons/hi";
 
 export {
   Home,
@@ -19,10 +24,13 @@ export {
   Dashboard,
   Task,
   Reporting,
+  Cloud,
   Projects,
   Users,
+  User,
   Menu,
   Settings,
   Logout,
   Support,
+  Email,
 };
