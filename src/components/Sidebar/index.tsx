@@ -12,7 +12,7 @@ import {
 } from "@/components/Icons";
 import { UsedSpaceWidget } from "./UsedSpaceWidget";
 import { Profile } from "./Profile";
-import * as Input from "../Input";
+import * as Input from "../Form/Input";
 import * as NavItem from "./Nav/NavItem";
 
 export function Sidebar() {

@@ -16,6 +16,7 @@ import {
 import {
   HiOutlineSupport as Support,
   HiOutlineMail as Email,
+  HiTrash as Trash,
 } from "react-icons/hi";
 
 export {
@@ -33,4 +34,5 @@ export {
   Logout,
   Support,
   Email,
+  Trash,
 };

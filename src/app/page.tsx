@@ -1,7 +1,11 @@
 import { SettingsTabs } from "@/components/SettingsTabs";
-import * as Input from "@/components/Input";
+import * as Input from "@/components/Form/Input";
 import * as FileInput from "@/components/Form/FileInput";
 import { Email } from "@/components/Icons";
+import { RadixSelect } from "@/components/Form/Select";
+import { SelectItem } from "@/components/Form/Select/SelectItem";
+import { BiBold, BiItalic, BiLink } from "react-icons/bi";
+import { TextArea } from "@/components/Form/Textarea";
 
 export default function Home() {
   return (
@@ -117,7 +121,25 @@ export default function Home() {
               Country
             </label>
 
-            <div></div>
+            <div>
+              <RadixSelect placeholder="Select a country">
+                <SelectItem
+                  className="cursor-pointer px-3 py-2.5 outline-none data-[highlighted]:bg-zinc-50"
+                  value="br"
+                  text="Brasil"
+                />
+                <SelectItem
+                  className="cursor-pointer px-3 py-2.5 outline-none data-[highlighted]:bg-zinc-50"
+                  value="es"
+                  text="Espanha"
+                />
+                <SelectItem
+                  className="cursor-pointer px-3 py-2.5 outline-none data-[highlighted]:bg-zinc-50"
+                  value="pt"
+                  text="Portugal"
+                />
+              </RadixSelect>
+            </div>
             <div />
           </div>
 
@@ -129,9 +151,18 @@ export default function Home() {
               Timezone
             </label>
 
-            <Input.Root>
-              <Input.Control id="role" type="role" defaultValue="CTO" />
-            </Input.Root>
+            <RadixSelect placeholder="Select a timezone">
+              <SelectItem
+                className="cursor-pointer px-3 py-2.5 outline-none data-[highlighted]:bg-zinc-50"
+                value="utc8"
+                text="Pacific Standard Time (UTC-08:00)"
+              />
+              <SelectItem
+                className="cursor-pointer px-3 py-2.5 outline-none data-[highlighted]:bg-zinc-50"
+                value="utc3"
+                text="America São Paulo (UTC-03:00)"
+              />
+            </RadixSelect>
             <div />
           </div>
 
@@ -143,7 +174,45 @@ export default function Home() {
               </span>
             </label>
 
-            <div></div>
+            <div className="space-y-3">
+              <div className="grid grid-cols-2 gap-3">
+                <RadixSelect placeholder="Select" defaultValue="normal">
+                  <SelectItem
+                    className="cursor-pointer px-3 py-2.5 outline-none data-[highlighted]:bg-zinc-50"
+                    value="normal"
+                    text="Normal Text"
+                  />
+                  <SelectItem
+                    className="cursor-pointer px-3 py-2.5 outline-none data-[highlighted]:bg-zinc-50"
+                    value="md"
+                    text="Markdown"
+                  />
+                </RadixSelect>
+
+                <div className="flex items-center gap-1">
+                  <button
+                    type="button"
+                    className="self-start rounded-md p-2 duration-150 ease-in hover:bg-zinc-50"
+                  >
+                    <BiItalic className="text-xl text-zinc-500" />
+                  </button>
+                  <button
+                    type="button"
+                    className="self-start rounded-md p-2 duration-150 ease-in hover:bg-zinc-50"
+                  >
+                    <BiBold className="text-xl text-zinc-500" />
+                  </button>
+                  <button
+                    type="button"
+                    className="self-start rounded-md p-2 duration-150 ease-in hover:bg-zinc-50"
+                  >
+                    <BiLink className="text-xl text-zinc-500" />
+                  </button>
+                </div>
+              </div>
+
+              <TextArea id="bio" defaultValue="I'm frontend developer" />
+            </div>
             <div />
           </div>
 
@@ -160,6 +229,7 @@ export default function Home() {
 
             <FileInput.Root>
               <FileInput.Trigger />
+              <FileInput.FileList />
               <FileInput.Control multiple />
             </FileInput.Root>
             <div />
