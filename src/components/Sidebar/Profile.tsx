@@ -1,3 +1,4 @@
+import { Button } from "../Button";
 import { Logout } from "../Icons";
 
 export function Profile() {
@@ -17,12 +18,9 @@ export function Profile() {
         </span>
       </div>
 
-      <button
-        type="button"
-        className="ml-auto self-start rounded-md p-2 duration-150 ease-in hover:bg-zinc-50"
-      >
+      <Button variant="ghost" type="button">
         <Logout className="text-xl text-zinc-500" />
-      </button>
+      </Button>
     </div>
   );
 }

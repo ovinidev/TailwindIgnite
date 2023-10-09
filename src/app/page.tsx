@@ -6,6 +6,7 @@ import { RadixSelect } from "@/components/Form/Select";
 import { SelectItem } from "@/components/Form/Select/SelectItem";
 import { BiBold, BiItalic, BiLink } from "react-icons/bi";
 import { TextArea } from "@/components/Form/Textarea";
+import { Button } from "@/components/Button";
 
 export default function Home() {
   return (
@@ -24,19 +25,12 @@ export default function Home() {
           </div>
 
           <div className="flex items-center gap-2">
-            <button
-              className="rounded-lg border border-zinc-300 px-4 py-2.5 text-sm font-semibold text-zinc-700 shadow-sm duration-150 ease-in hover:bg-zinc-50"
-              type="button"
-            >
+            <Button variant="outline" type="button">
               Cancel
-            </button>
-            <button
-              className="rounded-lg bg-violet-600 px-4 py-2.5 text-sm font-semibold text-zinc-50 shadow-sm duration-150 ease-in hover:bg-violet-700"
-              form="settings"
-              type="submit"
-            >
+            </Button>
+            <Button form="settings" type="submit">
               Save
-            </button>
+            </Button>
           </div>
         </div>
 
@@ -190,24 +184,15 @@ export default function Home() {
                 </RadixSelect>
 
                 <div className="flex items-center gap-1">
-                  <button
-                    type="button"
-                    className="self-start rounded-md p-2 duration-150 ease-in hover:bg-zinc-50"
-                  >
+                  <Button variant="ghost" type="button">
                     <BiItalic className="text-xl text-zinc-500" />
-                  </button>
-                  <button
-                    type="button"
-                    className="self-start rounded-md p-2 duration-150 ease-in hover:bg-zinc-50"
-                  >
+                  </Button>
+                  <Button variant="ghost" type="button">
                     <BiBold className="text-xl text-zinc-500" />
-                  </button>
-                  <button
-                    type="button"
-                    className="self-start rounded-md p-2 duration-150 ease-in hover:bg-zinc-50"
-                  >
+                  </Button>
+                  <Button variant="ghost" type="button">
                     <BiLink className="text-xl text-zinc-500" />
-                  </button>
+                  </Button>
                 </div>
               </div>
 
@@ -236,19 +221,12 @@ export default function Home() {
           </div>
 
           <div className="flex items-center justify-end gap-2 pt-6">
-            <button
-              className="rounded-lg border border-zinc-300 px-4 py-2.5 text-sm font-semibold text-zinc-700 shadow-sm duration-150 ease-in hover:bg-zinc-50"
-              type="button"
-            >
+            <Button variant="outline" type="button">
               Cancel
-            </button>
-            <button
-              className="rounded-lg bg-violet-600 px-4 py-2.5 text-sm font-semibold text-zinc-50 shadow-sm duration-150 ease-in hover:bg-violet-700"
-              form="settings"
-              type="submit"
-            >
+            </Button>
+            <Button form="settings" type="submit">
               Save
-            </button>
+            </Button>
           </div>
         </form>
       </div>
