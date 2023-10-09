@@ -3,12 +3,13 @@
 import { Cloud, Trash } from "@/components/Icons";
 import { useFileInput } from "./Root";
 import { bytesToSize } from "@/utils/formatBytes";
-
+import { useAutoAnimate } from "@formkit/auto-animate/react";
 export function FileList() {
   const { files, onDeleteFile } = useFileInput();
+  const [parent] = useAutoAnimate();
 
   return (
-    <div className="mt-4 space-y-3">
+    <div className="mt-4 animate-pulse space-y-3" ref={parent}>
       {files.map((file) => {
         return (
           <div

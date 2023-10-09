@@ -17,7 +17,7 @@ export function TabItem({ title, isActive = false }: TabItemProps) {
 
       {isActive && (
         <motion.div
-          layoutId="activeTab"
+          layoutId="underline"
           className="absolute -bottom-px left-0 right-0 h-0.5 bg-violet-700"
         />
       )}

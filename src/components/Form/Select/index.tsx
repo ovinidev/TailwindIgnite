@@ -16,7 +16,7 @@ export const RadixSelect = ({
   return (
     <Select.Root {...rest}>
       <Select.Trigger
-        className="flex h-11 w-full items-center justify-between gap-2 rounded-lg border border-zinc-300 px-3 py-2 shadow-sm data-[placeholder]:text-zinc-600"
+        className="flex h-11 w-full items-center justify-between gap-2 rounded-lg border border-zinc-300 px-3 py-2 shadow-sm outline-none focus:border-violet-300 focus:ring-4 focus:ring-violet-100 data-[placeholder]:text-zinc-600"
         aria-label="Country"
       >
         <Select.Value className="text-black" placeholder={placeholder} />
@@ -30,7 +30,7 @@ export const RadixSelect = ({
           side="bottom"
           position="popper"
           sideOffset={8}
-          className="z-10 w-[--radix-select-trigger-width] overflow-hidden rounded-lg border border-zinc-200 bg-white"
+          className="z-10 w-[--radix-select-trigger-width] animate-slideDownAndFade overflow-hidden rounded-lg border border-zinc-200 bg-white"
         >
           <Select.Viewport>{children}</Select.Viewport>
         </Select.Content>
