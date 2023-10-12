@@ -12,6 +12,8 @@
     "@formkit/auto-animate": "^0.8.0",
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.0.18",
+    "@radix-ui/react-collapsible": "^1.0.3",
+    "@radix-ui/react-scroll-area": "^1.0.5",
     "@radix-ui/react-select": "^2.0.0",
     "@radix-ui/react-tabs": "^1.0.4",
     "@types/node": "20.8.3",

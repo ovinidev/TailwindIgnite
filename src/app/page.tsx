@@ -16,7 +16,7 @@ export default function Home() {
       <SettingsTabs />
 
       <div className="mt-6 flex flex-col ">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col items-start gap-4 lg:flex-row lg:items-center lg:justify-between lg:gap-0">
           <div className="flex flex-col space-y-1">
             <h2 className="text-lg font-medium text-zinc-900">Personal info</h2>
             <span className="text-zinc-500">
@@ -39,7 +39,7 @@ export default function Home() {
           action=""
           className="mt-6 flex w-full flex-col gap-5 divide-y divide-zinc-200 border-t border-zinc-200"
         >
-          <div className="mt-6 grid grid-cols-form gap-3">
+          <div className="mt-6 grid grid-cols-1 gap-3 lg:grid-cols-form">
             <label
               className="text-sm font-medium text-zinc-700"
               htmlFor="firstName"
@@ -47,7 +47,7 @@ export default function Home() {
               Name
             </label>
 
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
               <Input.Root>
                 <Input.Control id="firstName" defaultValue="Vinícius" />
               </Input.Root>
@@ -58,7 +58,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-6 grid grid-cols-form gap-3 pt-6">
+          <div className="mt-6 grid grid-cols-1 gap-3 pt-6 lg:grid-cols-form">
             <label
               className="text-sm font-medium text-zinc-700"
               htmlFor="email"
@@ -77,7 +77,7 @@ export default function Home() {
             <div />
           </div>
 
-          <div className="mt-6 grid grid-cols-form gap-3 pt-6">
+          <div className="mt-6 grid grid-cols-1 gap-3 pt-6 lg:grid-cols-form">
             <label
               className="text-sm font-medium text-zinc-700"
               htmlFor="photo"
@@ -96,7 +96,7 @@ export default function Home() {
             <div />
           </div>
 
-          <div className="mt-6 grid grid-cols-form gap-3 pt-6">
+          <div className="mt-6 grid grid-cols-1 gap-3 pt-6 lg:grid-cols-form">
             <label className="text-sm font-medium text-zinc-700" htmlFor="role">
               Role
             </label>
@@ -107,7 +107,7 @@ export default function Home() {
             <div />
           </div>
 
-          <div className="mt-6 grid grid-cols-form gap-3 pt-6">
+          <div className="mt-6 grid grid-cols-1 gap-3 pt-6 lg:grid-cols-form">
             <label
               className="text-sm font-medium text-zinc-700"
               htmlFor="country"
@@ -137,7 +137,7 @@ export default function Home() {
             <div />
           </div>
 
-          <div className="mt-6 grid grid-cols-form gap-3 pt-6">
+          <div className="mt-6 grid grid-cols-1 gap-3 pt-6 lg:grid-cols-form">
             <label
               className="text-sm font-medium text-zinc-700"
               htmlFor="timezone"
@@ -160,7 +160,7 @@ export default function Home() {
             <div />
           </div>
 
-          <div className="mt-6 grid grid-cols-form gap-3 pt-6">
+          <div className="mt-6 grid grid-cols-1 gap-3 pt-6 lg:grid-cols-form">
             <label className="text-sm font-medium text-zinc-700" htmlFor="bio">
               Bio
               <span className="mt-0.5 block text-sm font-normal text-zinc-500">
@@ -201,7 +201,7 @@ export default function Home() {
             <div />
           </div>
 
-          <div className="mt-6 grid grid-cols-form gap-3 pt-6">
+          <div className="mt-6 grid grid-cols-1 gap-3 pt-6 lg:grid-cols-form">
             <label
               className="text-sm font-medium text-zinc-700"
               htmlFor="portfolio"

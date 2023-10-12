@@ -24,7 +24,9 @@ export function Trigger(props: TriggerProps) {
           or drag and drop
         </span>
 
-        <span className="text-sm">SVG, PNG, JPG or GIF (max. 800x400px)</span>
+        <span className="text-sm group-hover:text-violet-700">
+          SVG, PNG, JPG or GIF (max. 800x400px)
+        </span>
       </div>
     </label>
   );

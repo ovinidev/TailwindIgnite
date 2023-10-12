@@ -10,7 +10,7 @@ interface TabItemProps {
 export function TabItem({ title, isActive = false }: TabItemProps) {
   return (
     <Tabs.Trigger
-      className="relative px-1 pb-4 text-sm font-medium text-zinc-500 hover:text-violet-700 data-[state=active]:text-violet-700"
+      className="relative whitespace-nowrap px-1 pb-4 text-sm font-medium text-zinc-500 hover:text-violet-700 data-[state=active]:text-violet-700"
       value={title}
     >
       <span>{title}</span>
