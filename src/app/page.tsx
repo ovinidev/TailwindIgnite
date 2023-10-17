@@ -7,11 +7,13 @@ import { SelectItem } from "@/components/Form/Select/SelectItem";
 import { BiBold, BiItalic, BiLink } from "react-icons/bi";
 import { TextArea } from "@/components/Form/Textarea";
 import { Button } from "@/components/Button";
+import { Switch } from "@/components/Switch";
 
 export default function Home() {
   return (
     <>
       <h1 className="text-3xl font-medium text-zinc-900">Settings</h1>
+      <Switch />
 
       <SettingsTabs />
 
@@ -30,6 +32,9 @@ export default function Home() {
             </Button>
             <Button form="settings" type="submit">
               Save
+            </Button>
+            <Button variant="outline" type="button">
+              test
             </Button>
           </div>
         </div>
