@@ -33,9 +33,6 @@ export default function Home() {
             <Button form="settings" type="submit">
               Save
             </Button>
-            <Button variant="outline" type="button">
-              test
-            </Button>
           </div>
         </div>
 
